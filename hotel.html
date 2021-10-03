@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,24 +22,24 @@
         </li>
       </ul>
       <a class="logo-link" href="index.html">
-        <img class="logo" src="img\sedonalogo.svg" alt="Логотип Седона">
+        <img class="logo" src="img/sedona-logo.svg" alt="Логотип Седона">
       </a>
       <ul class="user-list">
         <li class="user-list-item">
           <a class="user-list-link" href="#">
             <span class="visually-hidden">Поиск</span>
-            <img src="img\search.svg" alt="Поиск">
+            <img src="img/search.svg" alt="Поиск">
           </a>
         </li>
         <li class="user-list-item">
           <a class="user-list-link" href="#">
             <span class="visually-hidden">Избранное</span>
-            <img src="img\favorites.svg" alt="Избранное">
+            <img src="img/favorites.svg" alt="Избранное">
           </a>
         </li>
         <li class="user-list-item">
-          <a class="user-list-link" href="#">
-            <button class="header-button">Хочу сюда!</button>
+          <a class="header-button" href="#">
+            Хочу сюда!
           </a>
         </li>
       </ul>
@@ -49,22 +50,23 @@
     <h1 class="hotel-title">
       Гостиницы Седоны
     </h1>
-    <ul class="bread-crumbs">
-      <li class="bread-crumbs-item">
-        <a class="bread-crumbs-link">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="index.html">
           <span class="visually-hidden">Главная</span>
-          <img src="img\hotel\home 1.svg" alt="Главная">
+          <img src="img/hotel/home-1.svg" alt="Главная">
         </a>
       </li>
-    <li class="bread-crumbs-item">
-      <a class="bread-crumbs-link">
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link">
         Гостиницы
       </a>
     </li>
   </ul>
 
     <section class="option">
-      <form class="option-form" action="index.html" method="post">
+      <h2 class="visually-hidden">Опции</h2>
+      <form class="option-form" action="https://echo.htmlacademy.ru/" method="get">
 
       <fieldset class="option-filter-group">
 
@@ -74,21 +76,21 @@
         <ul class="option-filter-list">
           <li class="option-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="">
+              <input class="visually-hidden control-input" type="checkbox" name="pool">
               <span class="control-mark"></span>
               <span class="control-label">Бассейн</span>
             </label>
           </li>
           <li class="option-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="">
+              <input class="visually-hidden control-input" type="checkbox" name="parking-lot">
               <span class="control-mark"></span>
               <span class="control-label">Парковка</span>
             </label>
           </li>
           <li class="option-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="">
+              <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
               <span class="control-mark"></span>
               <span class="control-label">Wi-Fi</span>
             </label>
@@ -103,21 +105,21 @@
         <ul class="type-filter-list">
           <li class="type-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="housing-group" value="hotel" checked>
+              <input class="visually-hidden control-input" type="radio" name="housing-grou" value="hotel" checked>
               <span class="control-mark"></span>
               <span class="control-label">Гостиница</span>
             </label>
           </li>
           <li class="type-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="housing-group" value="motel" checked>
+              <input class="visually-hidden control-input" type="radio" name="housing-grou" value="motel" checked>
               <span class="control-mark"></span>
               <span class="control-label">Мотель</span>
             </label>
           </li>
           <li class="type-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="housing-group" value="apartments" checked>
+              <input class="visually-hidden control-input" type="radio" name="housing-grou" value="apartments" checked>
               <span class="control-mark"></span>
               <span class="control-label">Апартаменты</span>
             </label>
@@ -157,17 +159,17 @@
         <ul class="services-options-list">
           <li class="services-options-item">
              <a class="hotel-options-link" href="#">
-               <img src="img\hotel\mode-tile 1.svg" alt="mode-tile">
+               <img src="img/hotel/mode-tile.svg" alt="mode-tile">
              </a>
             </li>
           <li class="services-options-item">
              <a class="hotel-options-link" href="#">
-               <img src="img\hotel\mode-slideshow 1.svg" alt="mode-slideshow">
+               <img src="img/hotel/mode-slideshow.svg" alt="mode-slideshow">
              </a>
             </li>
           <li class="services-options-item">
              <a class="hotel-options-link" href="#">
-               <img src="img\hotel\mode-list 1.svg" alt="mode-list">
+               <img src="img/hotel/mode-list.svg" alt="mode-list">
              </a>
             </li>
         </ul>
@@ -176,8 +178,10 @@
 
         <ul class="services-card-list">
           <li class="services-card-item">
-            <a class="services-card-link" href="hotel-Amara Resort & Spa.html">
-              <img class="services-card-image" src="img\hotel\hotel-1.jpg" alt="Amara Resort & Spa">
+            <a class="services-card-photo" href="#">
+              <img class="services-card-image" src="img/hotel/hotel-1.jpg" alt="Amara Resort & Spa">
+            </a>
+            <a class="services-card-link" href="hotel-Amara-Resort-Spa.html">
               <h3 class="services-card-title">Amara Resort & Spa</h3>
             </a>
             <span class="services-card-info">Гостиница</span>
@@ -185,16 +189,18 @@
             <button class="button" type="button">Подробнее</button>
             <button class="button" type="button">В избранное</button>
             <p class="rating">
-              <img src="img\hotel\star 1.svg" alt="star">
-              <img src="img\hotel\star 1.svg" alt="star">
-              <img src="img\hotel\star 1.svg" alt="star">
-              <img src="img\hotel\star 1.svg" alt="star">
+              <img src="img/hotel/star.svg" alt="4 out of 5 stars">
+              <img src="img/hotel/star.svg" alt="">
+              <img src="img/hotel/star.svg" alt="">
+              <img src="img/hotel/star.svg" alt="">
               <span class="rating-text">Рейтинг: 8,5</span>
             </p>
           </li>
           <li class="services-card-item">
-            <a class="services-card-link" href="hotel-Desert Quail Inn.html">
-              <img class="services-card-image" src="img\hotel\hotel-2.jpg" alt="Desert Quail Inn">
+            <a class="services-card-photo" href="#">
+              <img class="services-card-image" src="img/hotel/hotel-2.jpg" alt="Desert Quail Inn">
+            </a>
+            <a class="services-card-link" href="hotel-Desert-Quail-Inn.html">
               <h3 class="services-card-title">Desert Quail Inn</h3>
             </a>
             <span class="services-card-info">Мотель</span>
@@ -202,14 +208,16 @@
             <button class="button" type="button">Подробнее</button>
             <button class="button" type="button">В избранное</button>
             <p class="rating">
-              <img src="img\hotel\star 1.svg" alt="star">
-              <img src="img\hotel\star 1.svg" alt="star">
-              <img src="img\hotel\star 1.svg" alt="star">
+              <img src="img/hotel/star.svg" alt="3 out of 5 stars">
+              <img src="img/hotel/star.svg" alt="">
+              <img src="img/hotel/star.svg" alt="">
               <span class="rating-text">Рейтинг: 8,9</span>
           </li>
           <li class="services-card-item">
-            <a class="services-card-link" href="hotel-Villas at Poco Diablo.html">
-              <img class="services-card-image" src="img\hotel\hotel-3.jpg" alt="Villas at Poco Diablo">
+            <a class="services-card-photo" href="#">
+              <img class="services-card-image" src="img/hotel/hotel-3.jpg" alt="Villas at Poco Diablo">
+            </a>
+            <a class="services-card-link" href="hotel-Villas-at-Poco-Diablo.html">
               <h3 class="services-card-title">Villas at Poco Diablo</h3>
             </a>
             <span class="services-card-info">Апартаменты</span>
@@ -217,13 +225,15 @@
             <button class="button" type="button">Подробнее</button>
             <button class="button" type="button">В избранное</button>
             <p class="rating">
-              <img src="img\hotel\star 1.svg" alt="star">
-              <img src="img\hotel\star 1.svg" alt="star">
+              <img src="img/hotel/star.svg" alt="2 out of 5 stars">
+              <img src="img/hotel/star.svg" alt="">
               <span class="rating-text">Рейтинг: 9,2</span>
           </li>
           <li class="services-card-item">
-            <a class="services-card-link" href="hotel-GreenTree Inn.html">
-              <img class="services-card-image" src="img\hotel\hotel-4.jpg" alt="GreenTree Inn">
+            <a class="services-card-photo" href="#">
+              <img class="services-card-image" src="img/hotel/hotel-4.jpg" alt="GreenTree Inn">
+            </a>
+            <a class="services-card-link" href="hotel-GreenTree-Inn.html">
               <h3 class="services-card-title">GreenTree Inn</h3>
             </a>
             <span class="services-card-info">Гостиница</span>
@@ -231,8 +241,8 @@
             <button class="button" type="button">Подробнее</button>
             <button class="button" type="button">В избранное</button>
             <p class="rating">
-              <img src="img\hotel\star 1.svg" alt="star">
-              <img src="img\hotel\star 1.svg" alt="star">
+              <img src="img/hotel/star.svg" alt="2 out of 5 stars">
+              <img src="img/hotel/star.svg" alt="">
               <span class="rating-text">Рейтинг: 9,2</span>
           </li>
         </ul>
@@ -264,7 +274,7 @@
     </ul>
     <div class="number-of-displayed-hotels">
       <span class="number-of-displayed-hotels-text">Гостиниц на странице:</span>
-      <select class="select-control" id="sorting" name="sorting">
+      <select class="select-control" id="number-of-displayed-hotels" name="number-of-displayed-hotels">
         <option value="number-of-displayed-hotels-4">4</option>
         <option value="number-of-displayed-hotels-8">8</option>
         <option value="number-of-displayed-hotels-16">16</option>
@@ -274,7 +284,7 @@
   </main>
   <footer class="footer-hotel">
     <section class="subscribe">
-      <h2 class="subscribe-title"
+      <h2 class="subscribe-title">
         Подпишитесь на рассылку
       </h2>
       <p class="subscribe-text">
@@ -299,17 +309,17 @@
       <ul class="contacts-list">
         <li class="contacts-item">
           <a class="contacts-link" href="https://twitter.com/htmlacademy_ru">
-            <img src="img\social-twitter.svg" alt="Twitter">
+            <img src="img/social-twitter.svg" alt="Twitter">
           </a>
         </li>
         <li class="contacts-item">
           <a class="contacts-link" href="https://www.facebook.com/htmlacademy">
-             <img src="img\social-facebook.svg" alt="Facebook">
+             <img src="img/social-facebook.svg" alt="Facebook">
           </a>
         </li>
         <li class="contacts-item">
           <a class="contacts-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <img src="img\social-youtube.svg" alt="Youtube">
+            <img src="img/social-youtube.svg" alt="Youtube">
           </a>
         </li>
       </ul>
@@ -317,7 +327,7 @@
         +7 (812) 812-12-12
       </a>
       <a class="htmlacademy" href="https://htmlacademy.ru/">
-        <img src="img\logo_htmlacademy.svg" alt="HTMLAcademy">
+        <img src="img/logo_htmlacademy.svg" alt="HTMLAcademy">
       </a>
     </section>
   </footer>
