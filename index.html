@@ -4,7 +4,7 @@
  <head>
    <meta charset="utf-8">
    <title>HTML Academy: Седона</title>
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/style.css">
  </head>
 
  <body>
@@ -47,7 +47,7 @@
    <main class="main-index">
      <div class="welcome">
        <h1 class="visually-hidden">Седона</h1>
-       <img src="img/index/welcome.svg" alt="Welcome Sedona" width:458 height:352>
+       <img class="welcome-image" src="img/index/welcome.svg" alt="Welcome Sedona" width="458" height="352">
      </div>
 
      <section class="appeal">
@@ -55,20 +55,24 @@
        <p class="appeal-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
      </section>
      <ul class="reason-list">
-       <li class="reason-item">
-         <h2 class="reason-title">
-           Настоящий городок
-         </h2>
-         <p class="reason-number">
-           — №1 —
-         </p>
-         <p class="reason-text">
-           Седона — не аттракцион для туристов, там течёт своя жизнь
-         </p>
-         <img src="img/index/photo-1.jpg" alt="Город Седона">
+       <li class="reason-item ">
+
+         <div class="accent">
+           <h2 class="reason-title">
+             Настоящий городок
+           </h2>
+           <p class="reason-number">
+             — №1 —
+           </p>
+           <p class="reason-text">
+             Седона — не аттракцион для туристов, там течёт своя жизнь
+           </p>
+           <img src="img/index/photo-1.jpg" alt="Город Седона" width="800" height="384">
+         </div>
+
          <ul class="reason-extra-list">
-           <li class="reason-extra-item">
-             <h2 class="reason-extra-title">
+           <li class="reason-extra-item light-shade">
+             <h2 class="reason-extra-title housing">
                Жильё
              </h2>
              <p class="reason-extra-text">
@@ -76,7 +80,7 @@
              </p>
            </li>
 
-           <li class="reason-extra-item">
+           <li class="reason-extra-item eat">
              <h2 class="reason-extra-title">
                Еда
              </h2>
@@ -84,7 +88,7 @@
                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
              </p>
            </li>
-           <li>
+           <li class="reason-extra-item light-shade souvenirs">
              <h2 class="reason-extra-title">
                Сувениры
              </h2>
@@ -95,8 +99,8 @@
          </ul>
        </li>
 
-       <li class="reason-item">
-         <img src="img/index/photo-2.jpg" alt="Мост дьявола">
+       <li class="reason-item accent">
+         <img src="img/index/photo-2.jpg" alt="Мост дьявола" width="800" height="384">
          <h2 class="reason-title">
            Там есть мост дьявола
          </h2>
@@ -107,7 +111,7 @@
            Да, по нему можно пройти! Если вы осмелитесь, разумеется
          </p>
        </li>
-       <li class="reason-item">
+       <li class="reason-item light-shade">
          <h2 class="reason-title">
            Небольшая
            площадь
@@ -119,7 +123,7 @@
            Все достопримечательности находятся очень близко
          </p>
        </li>
-       <li class="reason-item">
+       <li class="reason-item dark-shade">
          <h2 class="reason-title">
            Красивая дорога
          </h2>
@@ -130,7 +134,7 @@
            Ехать в Седону из Лас-Вегаса совсем не скучно!
          </p>
        </li>
-       <li class="reason-item">
+       <li class="reason-item light-shade">
          <h2 class="reason-title">
            Мало туристов
          </h2>
@@ -150,7 +154,7 @@
        <p class="trip-text">
          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
        </p>
-       <a class="button" href="hotel.html">
+       <a class="button button-brown" href="hotel.html">
          ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
        </a>
      </section>

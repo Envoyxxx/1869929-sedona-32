@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+  @font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+a{
+  color: inherit;
+}
+
+.nav-link{
+  color: #000;
+  weight: 700;
+}
+
+.welcome{
+  background-color: #444;
+  background-image: url(../img/index/background-top.jpg);
+  width: 1200px;
+  height: 485px;
+  text-align: center;
+}
+.welcome-image{
+  width: 458px;
+  height: 352px;
+}
+
+.accent{
+  color: #fff;
+  background-color: #83B3D3;
+}
+
+.light-shade{
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.dark-shade{
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.reason-extra-title{
+  width: 250px;
+  height: 60px;
+}
+
+.reason-extra-text{
+  width: 250px;
+  height: 73px;
+}
+
+.subscribe-index{
+  color: #fff;
+  background-color: #444;
+  background-image: url(../img/index/background.jpg);
+  text-align: center;
+}
+
+.option{
+  color: #fff;
+  background-color: #444;
+  background-image: url(../img/hotel/catalog-background.jpg);
+  width: 1200px;
+  height: 408px;
+}
+
+.button{
+  color: #fff;
+  background-color: #83B3D3;
+  font-size: 16px;
+  line-height: 21px;
+}
+.button-green{
+  background-color: #7DB54F;
+}
+
+.header-button{
+  color: #fff;
+  background-color: #756257;
+}
+
+.button-reset{
+  background-color: transparent;
+}
+
+.button-brown{
+  background-color: #756257;
+}
+.pagination-item{
+  color: #fff;
+  background-color: #83B3D3;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+}
+
+.pagination-active{
+  color: #000;
+  background-color: #fff;
+}

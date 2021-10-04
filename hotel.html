@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -105,21 +105,21 @@
         <ul class="type-filter-list">
           <li class="type-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="housing-grou" value="hotel" checked>
+              <input class="visually-hidden control-input" type="radio" name="housing-group" value="hotel" checked>
               <span class="control-mark"></span>
               <span class="control-label">Гостиница</span>
             </label>
           </li>
           <li class="type-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="housing-grou" value="motel" checked>
+              <input class="visually-hidden control-input" type="radio" name="housing-group" value="motel" checked>
               <span class="control-mark"></span>
               <span class="control-label">Мотель</span>
             </label>
           </li>
           <li class="type-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="housing-grou" value="apartments" checked>
+              <input class="visually-hidden control-input" type="radio" name="housing-group" value="apartments" checked>
               <span class="control-mark"></span>
               <span class="control-label">Апартаменты</span>
             </label>
@@ -145,7 +145,7 @@
 
       </fieldset>
       <button class="button" type="submit">Применить</button>
-      <button class="button" type="reset">Сбросить</button>
+      <button class="button button-reset" type="reset">Сбросить</button>
       </form>
     </section>
 
@@ -186,7 +186,7 @@
             </a>
             <span class="services-card-info">Гостиница</span>
             <span class="services-card-price">От 4000 ₽</span>
-            <button class="button" type="button">Подробнее</button>
+            <button class="button button-brown" type="button">Подробнее</button>
             <button class="button" type="button">В избранное</button>
             <p class="rating">
               <img src="img/hotel/star.svg" alt="4 out of 5 stars">
@@ -205,7 +205,7 @@
             </a>
             <span class="services-card-info">Мотель</span>
             <span class="services-card-price">От 3000 ₽</span>
-            <button class="button" type="button">Подробнее</button>
+            <button class="button button-brown" type="button">Подробнее</button>
             <button class="button" type="button">В избранное</button>
             <p class="rating">
               <img src="img/hotel/star.svg" alt="3 out of 5 stars">
@@ -222,8 +222,8 @@
             </a>
             <span class="services-card-info">Апартаменты</span>
             <span class="services-card-price">От 2000 ₽</span>
-            <button class="button" type="button">Подробнее</button>
-            <button class="button" type="button">В избранное</button>
+            <button class="button button-brown" type="button">Подробнее</button>
+            <button class="button button-green" type="button">В избранном</button>
             <p class="rating">
               <img src="img/hotel/star.svg" alt="2 out of 5 stars">
               <img src="img/hotel/star.svg" alt="">
@@ -238,8 +238,8 @@
             </a>
             <span class="services-card-info">Гостиница</span>
             <span class="services-card-price">От 3000 ₽</span>
-            <button class="button" type="button">Подробнее</button>
-            <button class="button" type="button">В избранное</button>
+            <button class="button button-brown" type="button">Подробнее</button>
+            <button class="button " type="button">В избранное</button>
             <p class="rating">
               <img src="img/hotel/star.svg" alt="2 out of 5 stars">
               <img src="img/hotel/star.svg" alt="">
@@ -252,7 +252,7 @@
       <button class="button" type="button">Загрузить ещё</button>
 
     <ul class="pagination-list">
-      <li class="pagination-item">
+      <li class="pagination-item pagination-active">
           <a class="pagination-link">1</a>
       </li>
       <li class="pagination-item">
