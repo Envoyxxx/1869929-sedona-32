@@ -44,7 +44,7 @@
      </nav>
 
    </header>
-   <main class="main-index">
+   <main class="main-index main-container">
      <div class="welcome">
        <h1 class="visually-hidden">Седона</h1>
        <img class="welcome-image" src="img/index/welcome.svg" alt="Welcome Sedona" width="458" height="352">
@@ -54,11 +54,13 @@
        <h2 class="appeal-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
        <p class="appeal-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
      </section>
-     <ul class="reason-list">
-       <li class="reason-item">
 
+     <ul class="reason-list">
+
+       <li class="reason-item">
          <div class="accent">
-           <h2 class="reason-title">
+         <div class="reason-block-text">
+           <h2 class="reason-title accent-title">
              Настоящий городок
            </h2>
            <p class="reason-number">
@@ -67,41 +69,54 @@
            <p class="reason-text">
              Седона — не аттракцион для туристов, там течёт своя жизнь
            </p>
+         </div>
            <img src="img/index/photo-1.jpg" alt="Город Седона" width="800" height="384">
          </div>
 
          <ul class="reason-extra-list">
+           <div class="reason-block">
            <li class="reason-extra-item light-shade">
+             <div class="reason-block-text">
              <h2 class="reason-extra-title housing">
                Жильё
              </h2>
              <p class="reason-extra-text">
                Рекомендуем пожить в настоящем мотеле, всё как в кино!
              </p>
+             </div>
            </li>
 
            <li class="reason-extra-item eat">
+             <div class="reason-block-text">
              <h2 class="reason-extra-title">
                Еда
              </h2>
              <p class="reason-extra-text">
                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
              </p>
+             </div>
            </li>
+
            <li class="reason-extra-item light-shade souvenirs">
+             <div class="reason-block-text">
              <h2 class="reason-extra-title">
                Сувениры
              </h2>
              <p class="reason-extra-text">
                Не только китайского, но и настоящего местного производства!
              </p>
+           </div>
            </li>
+         </div>
          </ul>
        </li>
 
+
        <li class="reason-item accent">
+         <div class="accent">
          <img src="img/index/photo-2.jpg" alt="Мост дьявола" width="800" height="384">
-         <h2 class="reason-title">
+         <div class="reason-block-text">
+         <h2 class="reason-title accent-title">
            Там есть мост дьявола
          </h2>
          <p class="reason-number">
@@ -110,8 +125,13 @@
          <p class="reason-text">
            Да, по нему можно пройти! Если вы осмелитесь, разумеется
          </p>
+         </div>
+         </div>
        </li>
+
+        <div class="reason-block">
        <li class="reason-item light-shade">
+         <div class="reason-block-text">
          <h2 class="reason-title">
            Небольшая
            площадь
@@ -122,8 +142,11 @@
          <p class="reason-text">
            Все достопримечательности находятся очень близко
          </p>
+       </div>
        </li>
+
        <li class="reason-item dark-shade">
+         <div class="reason-block-text">
          <h2 class="reason-title">
            Красивая дорога
          </h2>
@@ -133,8 +156,11 @@
          <p class="reason-text">
            Ехать в Седону из Лас-Вегаса совсем не скучно!
          </p>
+         </div>
        </li>
+
        <li class="reason-item light-shade">
+         <div class="reason-block-text">
          <h2 class="reason-title">
            Мало туристов
          </h2>
@@ -144,7 +170,9 @@
          <p class="reason-text">
            Большинство едет в Гранд Каньон и толпится там
          </p>
+       </div>
        </li>
+     </div>
      </ul>
 
      <section class="trip">
@@ -181,10 +209,11 @@
        </form>
      </section>
      <section class="contacts">
-       <h2 class="visually-hidden">
+      <!-- <h2 class="visually-hidden">
          Контакты
-       </h2>
+       </h2>-->
        <ul class="contacts-list">
+         <div class="contact-block">
          <li class="contacts-item">
            <a class="contacts-link" href="https://twitter.com/htmlacademy_ru">
              <img src="img/social-twitter.svg" alt="Twitter">
@@ -200,13 +229,16 @@
              <img src="img/social-youtube.svg" alt="Youtube">
            </a>
          </li>
+       </div>
        </ul>
        <a class="contact-number" href="tel:+78128121212">
          +7 (812) 812-12-12
        </a>
+       <div class="htmlacademy-logo">
        <a class="htmlacademy" href="https://htmlacademy.ru/">
          <img src="img/logo_htmlacademy.svg" alt="HTMLAcademy">
        </a>
+     </div>
      </section>
    </footer>
 

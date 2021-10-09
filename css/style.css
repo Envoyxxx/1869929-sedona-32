@@ -14,16 +14,41 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+}
+
 body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #fff;
 }
 
 a{
   color: inherit;
   text-decoration: none;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-list{
+  margin: 0;
+  margin-left: 71px;
+  margin-right: 50px;
+  padding: 0;
+  width: 410px;
+  display: flex;
 }
 
 .nav-link{
@@ -36,18 +61,36 @@ a{
   line-height: 26px;
 }
 
+.nav-link:hover{
+  text-decoration: underline 2px;
+}
+
+.logo-link{
+  margin: 0 auto;
+}
+
+.user-list{
+  margin: 0;
+  margin-left: 169px;
+  margin-right: 72px;
+  padding: 0;
+  width: 290px;
+  display: flex;
+}
+
+.main-container{
+  flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .welcome{
   background-color: #444;
   background-image: url(../img/index/background-top.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 485px;
   text-align: center;
-}
-
-.nav-link:hover{
-  text-decoration: underline 2px;
 }
 
 .appeal-title{
@@ -58,7 +101,6 @@ a{
   line-height: 36px;
   text-align: center;
   width: 720px;
-  height: 80px;
   text-transform: uppercase;
   color: #000;
 }
@@ -69,6 +111,7 @@ a{
   font-weight: normal;
   font-size: 22px;
   line-height: 36px;
+  text-align: center;
 }
 
 .reason-item{
@@ -93,9 +136,22 @@ a{
   text-transform: uppercase;
 }
 
+.accent-title{
+  color: #fff;
+}
+
 .accent{
   color: #fff;
   background-color: #83B3D3;
+  display: flex;
+}
+
+.reason-block-text{
+  width: 400px;
+}
+
+.reason-block{
+  display: flex;
 }
 
 .light-shade{
@@ -185,6 +241,21 @@ a{
   line-height: 26px;
 }
 
+.contacts{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-block{
+  width: 140px;
+  margin-left: 72px;
+}
+
+.htmlacademy-logo{
+  width: 115px;
+  margin-right: 72px;
+}
+
 .contact-number{
   font-family: PT Sans;
   font-style: normal;
@@ -210,11 +281,46 @@ a{
   color: #fff;
 }
 
+.breadcrumbs{
+  display: flex;
+}
+
 .breadcrumbs-link{
   font-family: PT Sans;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
+}
+
+.sorting-block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-title{
+  width: 338px;
+  margin-left: 71px;
+}
+
+.select-control{
+  width: 290px;
+}
+
+.services-options-list{
+  display: flex;
+  width: 160px;
+  margin-right: 72px;
+}
+
+.services-options-item{
+  padding-left: 8px;
+}
+
+.services-card{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1056px;
 }
 
 .option-filter-title{
@@ -328,6 +434,17 @@ font-size: 16px;
   line-height: 26px;
   text-transform: uppercase;
   padding: 19px 240px 19px 240px;
+}
+
+.pagination{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1056px;
+}
+
+.pagination-list{
+  display: flex;
 }
 
 .pagination-item{

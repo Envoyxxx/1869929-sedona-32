@@ -46,7 +46,7 @@
     </nav>
 
   </header>
-  <main class="main-hotel">
+  <main class="main-hotel main-container">
     <section class="option">
 
     <h1 class="hotel-title">
@@ -151,6 +151,7 @@
     </section>
 
     <section class="services">
+      <div class="sorting-block">
       <h2 class="services-title">
         Найдено гостиниц: 38
       </h2>
@@ -160,6 +161,7 @@
           <option value="expensive">Сначала дорогое</option>
           <option value="popular">Сначала популярное</option>
         </select>
+        </div>
         <ul class="services-options-list">
           <li class="services-options-item">
             <a class="hotel-options-link" href="#">
@@ -177,12 +179,14 @@
             </a>
           </li>
         </ul>
-      </div>
+    </div>
 
 
 
       <ul class="services-card-list">
+
         <li class="services-card-item">
+          <div class="services-card">
           <a class="services-card-photo" href="#">
             <img class="services-card-image" src="img/hotel/hotel-1.jpg" alt="Amara Resort & Spa">
           </a>
@@ -200,8 +204,11 @@
             <img src="img/hotel/star.svg" alt="">
             <span class="rating-text">Рейтинг: 8,5</span>
           </p>
+          </div>
         </li>
+
         <li class="services-card-item">
+          <div class="services-card">
           <a class="services-card-photo" href="#">
             <img class="services-card-image" src="img/hotel/hotel-2.jpg" alt="Desert Quail Inn">
           </a>
@@ -217,8 +224,12 @@
             <img src="img/hotel/star.svg" alt="">
             <img src="img/hotel/star.svg" alt="">
             <span class="rating-text">Рейтинг: 8,9</span>
+          </p>
+            </div>
         </li>
+
         <li class="services-card-item">
+          <div class="services-card">
           <a class="services-card-photo" href="#">
             <img class="services-card-image" src="img/hotel/hotel-3.jpg" alt="Villas at Poco Diablo">
           </a>
@@ -233,8 +244,12 @@
             <img src="img/hotel/star.svg" alt="2 out of 5 stars">
             <img src="img/hotel/star.svg" alt="">
             <span class="rating-text">Рейтинг: 9,2</span>
+            </p>
+            </div>
         </li>
+
         <li class="services-card-item">
+          <div class="services-card">
           <a class="services-card-photo" href="#">
             <img class="services-card-image" src="img/hotel/hotel-4.jpg" alt="GreenTree Inn">
           </a>
@@ -249,12 +264,16 @@
             <img src="img/hotel/star.svg" alt="2 out of 5 stars">
             <img src="img/hotel/star.svg" alt="">
             <span class="rating-text">Рейтинг: 9,2</span>
+            </p>
+          </div>
         </li>
       </ul>
 
     </section>
 
     <button class="button button-load-more" type="button">Загрузить ещё</button>
+
+    <div class="pagination">
 
     <ul class="pagination-list">
       <li class="pagination-item pagination-active">
@@ -285,6 +304,7 @@
         <option value="number-of-displayed-hotels-16">16</option>
       </select>
     </div>
+    </div>
 
   </main>
   <footer class="footer-hotel">
@@ -308,33 +328,37 @@
       </form>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">
-        Контакты
-      </h2>
-      <ul class="contacts-list">
-        <li class="contacts-item">
-          <a class="contacts-link" href="https://twitter.com/htmlacademy_ru">
-            <img src="img/social-twitter.svg" alt="Twitter">
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a class="contacts-link" href="https://www.facebook.com/htmlacademy">
-            <img src="img/social-facebook.svg" alt="Facebook">
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a class="contacts-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <img src="img/social-youtube.svg" alt="Youtube">
-          </a>
-        </li>
-      </ul>
-      <a class="contact-number" href="tel:+78128121212">
-        +7 (812) 812-12-12
-      </a>
-      <a class="htmlacademy" href="https://htmlacademy.ru/">
-        <img src="img/logo_htmlacademy.svg" alt="HTMLAcademy">
-      </a>
-    </section>
+      <!-- <h2 class="visually-hidden">
+         Контакты
+       </h2>-->
+       <ul class="contacts-list">
+         <div class="contact-block">
+         <li class="contacts-item">
+           <a class="contacts-link" href="https://twitter.com/htmlacademy_ru">
+             <img src="img/social-twitter.svg" alt="Twitter">
+           </a>
+         </li>
+         <li class="contacts-item">
+           <a class="contacts-link" href="https://www.facebook.com/htmlacademy">
+             <img src="img/social-facebook.svg" alt="Facebook">
+           </a>
+         </li>
+         <li class="contacts-item">
+           <a class="contacts-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+             <img src="img/social-youtube.svg" alt="Youtube">
+           </a>
+         </li>
+       </div>
+       </ul>
+       <a class="contact-number" href="tel:+78128121212">
+         +7 (812) 812-12-12
+       </a>
+       <div class="htmlacademy-logo">
+       <a class="htmlacademy" href="https://htmlacademy.ru/">
+         <img src="img/logo_htmlacademy.svg" alt="HTMLAcademy">
+       </a>
+     </div>
+     </section>
   </footer>
 
 </body>
