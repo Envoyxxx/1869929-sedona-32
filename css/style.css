@@ -35,6 +35,24 @@ a{
   text-decoration: none;
 }
 
+li{
+  list-style-type: none;
+}
+footer{
+  padding-top: 90px;
+}
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .nav{
   display: flex;
   justify-content: space-between;
@@ -49,9 +67,12 @@ a{
   padding: 0;
   width: 410px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-link{
+  display: block;
+  padding: 20px 17px;
   font-family: PT Sans;
   color: #000;
   weight: 700;
@@ -76,6 +97,13 @@ a{
   padding: 0;
   width: 290px;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.user-list-item{
+  display: block;
+  text-align: center;
+  padding: 14px 10px;
 }
 
 .main-container{
@@ -85,7 +113,9 @@ a{
 }
 
 .welcome{
-  background-color: #444;
+  margin: 0 auto;
+  margin-bottom: 63px;
+  background-color: #fff;
   background-image: url(../img/index/background-top.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -94,6 +124,9 @@ a{
 }
 
 .appeal-title{
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 23px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -106,6 +139,9 @@ a{
 }
 
 .appeal-text{
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 80px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -119,21 +155,34 @@ a{
 }
 
 .reason-title{
+  margin: 0 auto;
+  padding-top: 98px;
+  padding-bottom: 25px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
   color: #000;
+  text-transform: uppercase;
+  max-width: 190px;
 }
 
 .reason-number{
+  margin: 0 auto;
+  padding-bottom: 26px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+.reason-text{
+  margin: 0 auto;
+  padding-bottom: 95px;
+  max-width: 250px;
 }
 
 .accent-title{
@@ -167,6 +216,9 @@ a{
 }
 
 .reason-extra-title{
+  margin: 0 auto;
+  padding-top: 165px;
+  padding-bottom: 30px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -176,11 +228,21 @@ a{
   color: #000;
 }
 
+.reason-extra-text{
+  margin: 0 auto;
+  padding-bottom: 80px;
+  width: 250px;
+}
+
 .trip{
   text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .trip-title{
+  margin: 0 auto;
+  padding-bottom: 35px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -191,14 +253,19 @@ a{
 }
 
 .trip-text{
+  margin: 0 auto;
+  padding-bottom: 60px;
+  text-align: center;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
+  max-width: 600px;
 }
 
 .subscribe-index{
+  margin: 0 auto;
   color: #fff;
   background-color: #444;
   background-image: url(../img/index/background.jpg);
@@ -210,10 +277,15 @@ a{
 }
 
 .subscribe{
+  margin: 0 auto;
+  padding-bottom: 135px;
+  width: 800px;
   text-align: center;
 }
 
 .subscribe-title{
+  margin: 0 auto;
+  padding-bottom: 35px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -224,6 +296,9 @@ a{
 }
 
 .subscribe-index-title{
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 35px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -234,21 +309,31 @@ a{
 }
 
 .subscribe-text{
+  margin: 0 auto;
+  padding-bottom: 50px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
+  width: 500px;
 }
 
 .contacts{
   display: flex;
   justify-content: space-between;
+  padding-top: 40px;
 }
 
 .contact-block{
+  display: flex;
   width: 140px;
   margin-left: 72px;
+}
+
+.contacts-item{
+  margin: 0 auto;
+  padding-right: 30px;
 }
 
 .htmlacademy-logo{
@@ -272,7 +357,15 @@ a{
   background-repeat: no-repeat;
 }
 
+.option-container{
+  margin: 0 auto;
+  padding-bottom: 85px;
+  width: 1056px;
+}
+
 .hotel-title{
+  margin: 0 auto;
+  padding-top: 35px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -283,13 +376,23 @@ a{
 
 .breadcrumbs{
   display: flex;
+  padding-inline-start: 0;
+}
+
+.breadcrumbs-item{
+  padding-right: 26px;
 }
 
 .breadcrumbs-link{
   font-family: PT Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.option-block{
+  display: flex;
+  justify-content: space-between;
 }
 
 .sorting-block{
@@ -330,6 +433,10 @@ font-size: 16px;
   font-size: 20px;
   line-height: 26px;
   color: #000;
+}
+
+.option-filter-item{
+  list-style-type:
 }
 
 .control-label{
@@ -401,6 +508,7 @@ font-size: 16px;
 }
 
 .button-trip{
+  margin: 0 auto;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -426,7 +534,12 @@ font-size: 16px;
   text-transform: uppercase;
 }
 
+.button-load-more-block{
+  display: flex;
+}
+
 .button-load-more{
+  margin: 30px auto;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -440,6 +553,7 @@ font-size: 16px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding-top: 30px;
   width: 1056px;
 }
 
@@ -448,24 +562,15 @@ font-size: 16px;
 }
 
 .pagination-item{
+  margin-right: 8px;
+  padding: 17px 0;
   color: #fff;
   background-color: #83B3D3;
   width: 55px;
-  height: 55px;
   text-align: center;
 }
 
 .pagination-active{
   color: #000;
   background-color: #fff;
-}
-
-.subscribe-index{
-  margin: 0 auto;
-  width: 800px;
-}
-
-.subscribe{
-  margin: 0 auto;
-  width: 800px;
 }
