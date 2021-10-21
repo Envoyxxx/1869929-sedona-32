@@ -375,6 +375,8 @@ footer{
 }
 
 .breadcrumbs{
+  margin: 0;
+  padding-bottom: 45px;
   display: flex;
   padding-inline-start: 0;
 }
@@ -395,12 +397,24 @@ footer{
   justify-content: space-between;
 }
 
+.option-filter-group{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.option-filter-list{
+  padding: 0;
+  padding-top: 30px;
+}
+
 .sorting-block{
   display: flex;
   justify-content: space-between;
 }
 
 .services-title{
+  margin: 0 auto;
   width: 338px;
   margin-left: 71px;
 }
@@ -410,6 +424,7 @@ footer{
 }
 
 .services-options-list{
+  margin: 0 auto;
   display: flex;
   width: 160px;
   margin-right: 72px;
@@ -419,11 +434,28 @@ footer{
   padding-left: 8px;
 }
 
+.services-card-list{
+  margin: 0;
+  margin-left: 127px;
+  margin-right: 17px;
+  padding: 0;
+}
+
 .services-card{
   display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   width: 1056px;
+}
+
+.card-content{
+  padding-left: 37px;
+  display: flex;
+  justify-content: space-between;
+  width: 839px;
+}
+
+.card-content-text{
+  display: column;
 }
 
 .option-filter-title{
@@ -447,6 +479,7 @@ footer{
 }
 
 .services-card-item{
+  padding: 30px 0;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -465,12 +498,27 @@ footer{
 }
 
 .services-card-title{
+  margin: 0;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
   color: #000;
+}
+
+.card-content-text-info{
+  display: flex;
+  justify-content: space-between;
+  width: 235px;
+}
+
+.rating-stars{
+  padding-bottom: 63px;
+}
+
+.rating-text{
+  background-color: #F2F2F2;
 }
 
 .button{
@@ -480,6 +528,8 @@ footer{
   line-height: 21px;
   text-transform: uppercase;
   padding: 9px 30px 10px 30px;
+  height: max-content;
+  border-radius: 4px;
 }
 
 .button-green{
@@ -534,6 +584,10 @@ footer{
   text-transform: uppercase;
 }
 
+.button-block-card{
+  padding-top: 30px;
+}
+
 .button-load-more-block{
   display: flex;
 }
@@ -562,6 +616,7 @@ footer{
 }
 
 .pagination-item{
+  border-radius: 4px;
   margin-right: 8px;
   padding: 17px 0;
   color: #fff;
