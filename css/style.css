@@ -394,13 +394,13 @@ li{
 
 .breadcrumbs{
   margin: 0;
-  padding-bottom: 45px;
+  margin-bottom: 45px;
   display: flex;
   padding-inline-start: 0;
 }
 
 .breadcrumbs-item{
-  padding-right: 26px;
+  margin-right: 26px;
 }
 
 .breadcrumbs-link{
@@ -415,27 +415,56 @@ li{
   justify-content: space-between;
 }
 
+.option-filter-block{
+  display: flex;
+  justify-content: space-between;
+  width: 367px
+}
+
 .option-filter-group{
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+.option-input-block{
+  display: flex;
+  border: solid #fff 1px;
+  border-radius: 4px;
+}
+
+.option-filter-input{
+  width: 143px;
+  height: 48px;
+  background-color: transparent;
+  border: solid #fff 1px;
+}
+
+.button-option-block{
+  margin-left: 81px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
 .option-filter-list{
+  margin: 0;
   padding: 0;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .sorting-block{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding-top: 44px;
+  padding-bottom: 42px;
+  width: 1057px;
+  margin: 0 auto;
 }
 
 .services-title{
-  margin: 0 auto;
+  margin: 0;
   width: 338px;
-  margin-left: 71px;
 }
 
 .select-control{
@@ -446,10 +475,10 @@ li{
 }
 
 .services-options-list{
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   display: flex;
   width: 160px;
-  margin-right: 72px;
 }
 
 .services-options-item{
@@ -464,9 +493,7 @@ li{
 }
 
 .services-card-list{
-  margin: 0;
-  margin-left: 127px;
-  margin-right: 17px;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -477,7 +504,7 @@ li{
 }
 
 .card-content{
-  padding-left: 37px;
+  margin-left: 37px;
   display: flex;
   justify-content: space-between;
   width: 839px;
@@ -499,6 +526,8 @@ li{
   width: 287px;
   height: 48px;
   border-color: #E5E5E5;
+  margin-left: 190px;
+  margin-right: 81px;
 }
 
 .control-label{
@@ -517,6 +546,10 @@ li{
   line-height: 23px;
   border-top: solid #E5E5E5 1px;
   padding: 30px 0;
+}
+
+.services-card-photo{
+  margin-top: 8px;
 }
 
 .services-title{
@@ -549,8 +582,18 @@ li{
   width: 235px;
 }
 
+.button-block-card{
+  margin-top: 31px;
+}
+
+.rating{
+  display: flex;
+  flex-direction: column;
+}
+
 .rating-stars{
-  padding-bottom: 63px;
+  margin: 0 auto;
+  margin-bottom: 63px;
 }
 
 .rating-text{
@@ -567,6 +610,7 @@ li{
   padding: 9px 30px 10px 30px;
   height: max-content;
   border-radius: 4px;
+  border: 0;
 }
 
 .button-green{
@@ -589,6 +633,8 @@ li{
 
 .button-reset{
   background-color: transparent;
+  border: 0;
+  text-transform: none;
 }
 
 .button-brown{
@@ -604,6 +650,7 @@ li{
   line-height: 36px;
   padding: 13px 135px 17px 135px;
   text-transform: uppercase;
+  border: 0;
 }
 
 .button-subscribe{
@@ -623,6 +670,7 @@ li{
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
+  border: 0;
 }
 
 
@@ -704,4 +752,10 @@ li{
   border: 0;
   border-radius: 10px 0 0 10px;
   background-color: #F2F2F2;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 22px;
 }
