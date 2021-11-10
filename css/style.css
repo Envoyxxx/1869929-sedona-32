@@ -38,9 +38,6 @@ a{
 li{
   list-style-type: none;
 }
-footer{
-  padding-top: 90px;
-}
 
 .visually-hidden{
   position: absolute;
@@ -56,13 +53,13 @@ footer{
 .nav{
   display: flex;
   justify-content: space-between;
-  width: 1200px;
   margin: 0 auto;
+  padding-left: 71px;
+  padding-right: 72px;
 }
 
 .nav-list{
   margin: 0;
-  margin-left: 71px;
   margin-right: 50px;
   padding: 0;
   width: 410px;
@@ -87,14 +84,13 @@ footer{
 }
 
 .logo-link{
-  margin: 0 531px;
+  margin: 0 460px;
   position: absolute;
 }
 
 .user-list{
   margin: 0;
   margin-left: 169px;
-  margin-right: 72px;
   padding: 0;
   width: 290px;
   display: flex;
@@ -115,7 +111,6 @@ footer{
 
 .welcome{
   margin: 0 auto;
-  margin-bottom: 63px;
   background-color: #fff;
   background-image: url(../img/index/background-top.jpg);
   background-size: 100% auto;
@@ -124,10 +119,15 @@ footer{
   text-align: center;
 }
 
+.appeal{
+  padding-top: 63px;
+  padding-bottom: 80px;
+}
+
 .appeal-title{
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 23px;
+  margin-bottom: 23px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -142,7 +142,6 @@ footer{
 .appeal-text{
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 80px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -158,9 +157,6 @@ footer{
 
 .reason-item{
   text-align: center;
-  width: 250px;
-  padding: 0 75px;
-  padding-top: 98px;
 }
 
 .reason-title{
@@ -178,7 +174,7 @@ footer{
 
 .reason-number{
   margin: 0 auto;
-  padding-bottom: 26px;
+  margin-bottom: 26px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -189,7 +185,6 @@ footer{
 
 .reason-text{
   margin: 0 auto;
-  padding-bottom: 95px;
   max-width: 250px;
 }
 
@@ -206,7 +201,7 @@ footer{
 
 .reason-block-text{
   width: 250px;
-  padding: 0 75px;
+  padding: 98px 75px 77px;
 }
 
 .reason-block{
@@ -254,12 +249,13 @@ footer{
 .trip{
   text-align: center;
   margin: 0 auto;
-  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .trip-title{
   margin: 0 auto;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -271,7 +267,7 @@ footer{
 
 .trip-text{
   margin: 0 auto;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   text-align: center;
   font-family: PT Sans;
   font-style: normal;
@@ -282,6 +278,8 @@ footer{
 }
 
 .subscribe-index{
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin: 0 auto;
   color: #fff;
   background-color: #444;
@@ -289,20 +287,24 @@ footer{
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 411px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe{
   margin: 0 auto;
+  padding-top: 90px;
   padding-bottom: 135px;
   width: 800px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe-title{
   margin: 0 auto;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -314,8 +316,7 @@ footer{
 
 .subscribe-index-title{
   margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 35px;
+  margin-bottom: 30px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -327,7 +328,7 @@ footer{
 
 .subscribe-text{
   margin: 0 auto;
-  padding-bottom: 50px;
+  margin-bottom: 46px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -492,11 +493,6 @@ footer{
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
-  color: #000;
-}
-
-.option-filter-item{
-  list-style-type:
 }
 
 .services-control{
@@ -523,10 +519,6 @@ footer{
   padding: 30px 0;
 }
 
-.services-card-list:last-child{
-  border-top: solid #E5E5E5 1px;
-}
-
 .services-title{
   font-family: PT Sans;
   font-style: normal;
@@ -545,6 +537,10 @@ footer{
   font-size: 24px;
   line-height: 31px;
   color: #000;
+}
+
+.card-info{
+  display: flex;
 }
 
 .card-content-text-info{
@@ -588,6 +584,7 @@ footer{
   text-align: center;
   text-transform: uppercase;
   padding: 9px 23px 10px 23px;
+  border-radius: 4px;
 }
 
 .button-reset{
@@ -616,6 +613,7 @@ footer{
   line-height: 26px;
   text-transform: uppercase;
   border-radius: 0 10px 10px 0;
+  border: 0;
 }
 
 .button-option{
@@ -695,6 +693,7 @@ footer{
 
 .newsletter-form{
   display: flex;
+  margin: 0 auto;
 
 }
 
