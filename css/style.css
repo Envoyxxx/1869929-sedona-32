@@ -78,9 +78,8 @@ li{
   font-size: 20px;
   line-height: 26px;
 }
-
-.nav-link:hover{
-  text-decoration: underline 2px;
+.active-page{
+  border-bottom: 2px solid #756257;
 }
 
 .logo-link{
@@ -98,9 +97,20 @@ li{
 }
 
 .user-list-item{
+  position: relative;
   display: block;
   text-align: center;
   padding: 14px 10px;
+}
+
+.user-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-bottom: 24px;
 }
 
 .main-container{
@@ -229,6 +239,27 @@ li{
   padding-bottom: 80px;
 }
 
+.housing{
+  background-image: url(../img/index/icon-1.svg);
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center bottom 223px;
+}
+
+.eat{
+  background-image: url(../img/index/icon-2.svg);
+  background-repeat: no-repeat;
+  background-size: 74px 70px;
+  background-position: center bottom 223px;
+}
+
+.souvenirs{
+  background-image: url(../img/index/icon-3.svg);
+  background-repeat: no-repeat;
+  background-size: 64px 76px;
+  background-position: center bottom 223px;
+}
+
 .reason-extra-title{
   margin: 0 auto;
   margin-bottom: 30px;
@@ -341,12 +372,15 @@ li{
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
-.contact-block{
+.contacts-list{
+  margin: 0;
+  padding: 0;
   display: flex;
   width: 140px;
-  margin-left: 72px;
 }
 
 .contacts-item{
@@ -356,7 +390,6 @@ li{
 
 .htmlacademy-logo{
   width: 115px;
-  margin-right: 72px;
 }
 
 .contact-number{
@@ -368,6 +401,7 @@ li{
 }
 
 .option{
+  padding: 35px 72px 85px;
   color: #fff;
   background-color: #444;
   background-image: url(../img/hotel/catalog-background.jpg);
@@ -375,15 +409,8 @@ li{
   background-repeat: no-repeat;
 }
 
-.option-container{
-  margin: 0 auto;
-  padding-bottom: 85px;
-  width: 1056px;
-}
-
 .hotel-title{
   margin: 0 auto;
-  padding-top: 35px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -484,23 +511,17 @@ li{
 .services-options-item{
   margin-right: 8px;
   padding: 17px 16px;
-  border: solid #E5E5E5;
+  border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
 
 .services-options-item:hover{
-  border-color: #000;
+  border-color: #83B3D3;
 }
 
 .services-card-list{
   margin: 0 auto;
   padding: 0;
-}
-
-.services-card{
-  display: flex;
-  margin: 0 auto;
-  width: 1056px;
 }
 
 .card-content{
@@ -538,14 +559,15 @@ li{
 }
 
 .services-card-item{
-  padding: 30px 0;
+  padding: 30px 72px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
   border-top: solid #E5E5E5 1px;
-  padding: 30px 0;
+  display: flex;
+
 }
 
 .services-card-photo{
@@ -601,23 +623,74 @@ li{
 }
 
 .button{
-  display: inline;
+  display: inline-block;
   color: #fff;
   background-color: #83B3D3;
-  font-size: 16px;
-  line-height: 21px;
-  text-transform: uppercase;
   padding: 9px 30px 10px 30px;
   height: max-content;
   border-radius: 4px;
   border: 0;
+  cursor: pointer;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #68A2CA;
+  border: 1px solid #756257;
+}
+
+.button:focus {
+  border: 3px solid #756257;
+  background-color: #68A2CA;
+}
+
+.button:disabled {
+  opacity: 0.3;
+  background-color: #68A2CA;
+  border: 1px solid #756257;
+}
+
+.button:disabled:hover {
+  opacity: 0.3;
+  background-color: #68A2CA;
+  outline: none;
+  cursor: default;
 }
 
 .button-green{
   background-color: #7DB54F;
 }
 
+.button-green:hover {
+  background-color: #6C9E42;
+}
+
+.button-green:focus {
+  border: 3px solid #756257;
+  background-color: #6C9E42;
+}
+
+.button-green:disabled {
+  opacity: 0.3;
+  background-color: #68A2CA;
+  border: 1px solid #756257;
+}
+
+.button-green:disabled:hover {
+  opacity: 0.3;
+  background-color: #6C9E42;
+  outline: none;
+  cursor: default;
+}
+
 .header-button{
+  display: inline-block;
   font-family: PT Sans;
   font-size: 16px;
   line-height: 21px;
@@ -629,6 +702,29 @@ li{
   text-transform: uppercase;
   padding: 9px 23px 10px 23px;
   border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: #615048;
+}
+
+.header-button:focus {
+  border: 3px solid #83B3D3;
+  background-color: #615048;
+}
+
+.header-button:disabled {
+  opacity: 0.3;
+  background-color: #615048;
+}
+
+.header-button:disabled:hover {
+  opacity: 0.3;
+  background-color: #615048;
+  outline: none;
+  cursor: default;
 }
 
 .button-reset{
@@ -639,6 +735,27 @@ li{
 
 .button-brown{
   background-color: #756257;
+}
+
+.button-brown:hover {
+  background-color: #615048;
+}
+
+.button-brown:focus {
+  border: 3px solid #83B3D3;
+  background-color: #615048;
+}
+
+.button-brown:disabled {
+  opacity: 0.3;
+  background-color: #615048;
+}
+
+.button-brown:disabled:hover {
+  opacity: 0.3;
+  background-color: #615048;
+  outline: none;
+  cursor: default;
 }
 
 .button-trip{
@@ -687,10 +804,10 @@ li{
 
 .button-load-more-block{
   display: flex;
+  padding: 30px 287px;
 }
 
 .button-load-more{
-  margin: 30px auto;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
